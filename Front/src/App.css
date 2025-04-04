@@ -1,0 +1,115 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  text-align: center;
+}
+
+.app-header {
+  background-color: #282c34;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.app-body {
+  flex: 1;
+}
+
+.app-footer {
+  background-color: #282c34;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin-top: auto; /* Para que se quede abajo */
+}
+
+.custom_button_1 {
+  background-color: #282c34;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+ul {
+  margin-top: 30px;
+}
+
+li {
+  width: 100px;
+}
+
+List {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the left */
+  justify-content: flex-start; /* Justify content to the top */
+}
+
+/* Add this CSS for the Item component */
+Item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start; /* Align content to the left */
+}
+
+/* Add this CSS for the list items */
+List ul {
+  display: flex;
+  flex-direction: row;
+  align-items: space-between; /* Align items to the left */
+  justify-content: space-between; /* Justify content to the top */
+}
+
+List li {
+  float: left; /* Float list items to the left */
+  margin-right: 30px; /* Add some space between items */
+}
+
+
+#revivir {
+  background-color: red;
+  color: black;
+}
+
+#revivir:hover {
+  background-color: rgb(255, 62, 62);
+}
+
+#revivir:active {
+  background-color: rgb(70, 0, 0);
+  color: white;
+}
+
+#aumentar {
+  background-color: rgb(0, 184, 0);
+  color: black;
+}
+
+#aumentar:hover {
+  background-color: rgb(0, 219, 0);
+}
+
+#aumentar:active {
+  background-color: rgb(0, 70, 0);
+  color: white;
+}
